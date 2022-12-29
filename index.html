@@ -12,17 +12,22 @@
 			<div class="header__logo">
 				<img
 					class="logo__icon" 
-					src="" 
+					src="./src/assets/logo/logo_vector.svg" 
 					alt="logo">
 				<a href="#" class="logo__a">Plants</a>
 			</div>
 			<nav class="header__navigation">
 				<ul class="navigation">
-					<li>Home</li>
-					<li>About us</li>
-					<li>Service</li>
-					<li>Price</li>
-					<li>Contacts</li>
+					<li>
+						<a class="header_a" href="#">Home</a></li>
+					<li>						
+						<a class="header_a" href="#">About us</a></li>
+					<li>
+						<a class="header_a" href="#">Service</a></li>
+					<li>
+						<a class="header_a" href="#">Price</a></li>
+					<li>
+						<a class="header_a" href="#">Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -32,7 +37,7 @@
 			<div class="wrapper">
 				<img 
 					class="welcome__image" 
-					src="./assets/img/leafs.png" 
+					src="./src/assets/img/leafs.png" 
 					alt="leafs">
 				<div class="welcome__content">
 					<h1>We grow 
@@ -45,10 +50,8 @@
 					text ever since the 1500s.
 					</p>
 					<button 
-					class="welcome__button">
-						<a class="welcome_link" href="">
-							Learn more
-						</a>
+						class="welcome__button">
+						<a class="welcome_link" href="#">Learn more</a>
 					</button>
 				</div>
 			</div>
@@ -68,7 +71,10 @@
 				book. It has survived not only five centuries, 
 				but also the leap into electronic typesetting, 
 				remaining essentially unchanged. </p>
-				<img class="about__image" src="./assets/img/houseplant_1.png" alt="houseplant">
+				<img 
+					class="about__image" 
+					src="./src/assets/img/houseplant.png" 
+					alt="houseplant">
 			</div>
 		</section>
 		<section class="section service">
@@ -76,15 +82,21 @@
 				<div class="servise__header">
 					<h2><span class="marker">Service and our projects</span></h2>
 					<div class="servise__buttons">
-						<button class="service__button">Gardens</button>
-						<button class="service__button">Lawn</button>
-						<button class="service__button">Planting</button>
+						<button class="service__button">
+							<a class="servise_a" href="#">Gardens</a>
+						</button>
+						<button class="service__button">
+							<a class="servise_a" href="#">Lawn</a>
+						</button>
+						<button class="service__button">
+							<a class="servise_a" href="#">Planting</a>
+						</button>
 					</div>
 				</div>
 				<div class="figures">
 					<figure>
 						<img 
-							src="./assets/img/first.png" 
+							src="./src/assets/img/first.png" 
 							alt="first">
 						<figcaption>
 							<h3>Garden care</h3>
@@ -93,7 +105,7 @@
 					</figure>	
 					<figure>
 						<img 
-							src="./assets/img/second.png" 
+							src="./src/assets/img/second.png" 
 							alt="second">
 						<figcaption>
 							<h3>Planting</h3>
@@ -102,7 +114,7 @@
 					</figure>	
 					<figure>
 						<img 
-							src="./assets/img/third.png" 
+							src="./src/assets/img/third.png" 
 							alt="third">
 						<figcaption>
 							<h3>Lawn care</h3>
@@ -111,7 +123,7 @@
 					</figure>	
 					<figure>
 						<img 
-							src="./assets/img/fourth.png" 
+							src="./src/assets/img/fourth.png" 
 							alt="fourth">
 						<figcaption>
 							<h3>Planting</h3>
@@ -120,7 +132,7 @@
 					</figure>	
 					<figure>
 						<img 
-							src="./assets/img/fifth.png" 
+							src="./src/assets/img/fifth.png" 
 							alt="fifth">
 						<figcaption>
 							<h3>Garden care</h3>
@@ -129,7 +141,7 @@
 					</figure>	
 					<figure>
 						<img 
-							src="./assets/img/sixth.png" 
+							src="./src/assets/img/sixth.png" 
 							alt="assets">
 						<figcaption>
 							<h3>Planting</h3>
@@ -153,27 +165,29 @@
 						<button class="prices__button">Basics 
 							<img 
 								class="prices__image" 
-								src="./assets/img/accordion_btn.png" 
+								src="./src/assets/svg/accordion_btn_light.svg" 
 								alt="accordion_btn">
 						</button>
 						<button class="prices__button">Standard  
 							<img 
 								class="prices__image" 
-								src="./assets/img/accordion_btn.png" 
+								src="./src/assets/svg/accordion_btn_light.svg" 
 								alt="accordion_btn">
 						</button>
 						<button class="prices__button">Pro care 
 							<img 
 								class="prices__image" 
-								src="./assets/img/accordion_btn.png" 
+								src="./src/assets/svg/accordion_btn_light.svg" 
 								alt="accordion_btn">
 						</button>
 					</div>
-					<button class="prices__button">Contact us</button>
+					<button class="prices__button">
+						<a class="contacts__a" href="#">Contact us</a>
+					</button>
 					<img 
 						class="prices__image"
-						src="./assets/img/leafs-2.png" 
-						alt="leafs">
+						src="./src/assets/img/leafs_mini.png" 
+						alt="leafs_mini">
 				</div>
 			</div>
 		</section>
@@ -181,18 +195,15 @@
 			<div class="wrapper">
 				<img 
 					class="contacts__image"
-					src="./assets/img/contact_woman.png" 
+					src="./src/assets/img/contact_woman.png" 
 					alt="woman">
 				<h2><span class="marker">Contact us</span></h2>
 				<ul class="contacts__list">
 					<li class="contacts__list_item">
-						<a 
-							class="contacts__a"
-							href="">City
-						</a>
+						<a class="contacts__a" href="">City</a>
 						<img 
 							class="contacts__image_icon"
-							src="./assets/img/accordion_btn_2.png" 
+							src="./src/assets/svg/accordion_btn.svg" 
 							alt="accordion_btn">
 					</li>
 				</ul>
@@ -203,19 +214,13 @@
 		<div class="wrapper">
 			<div>2022</div>
 			<div>
-				<a 
-					class="footer_a" 
-					href="https://github.com/amoriah">GitHub
-				</a>
+				<a class="footer_a" href="https://github.com/amoriah">GitHub</a>
 			</div>
 			<div>
-				<a 
-					class="foo" 
-					target="_blank" 
-					href="https://rs.school/js/">
+				<a class="foo" target="_blank" href="https://rs.school/js/">
 				<img 
 					width="120" 
-					src="./assets/svg/rs_school_js.svg" 
+					src="./src/assets/logo/rs_school_js.svg" 
 					alt="rs-school">
 				</a>
 			</div>	
