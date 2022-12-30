@@ -1,0 +1,20 @@
+{
+  "name": "plants_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass src/sass/style.scss src/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amoriah/plants_new.git"
+  },
+  "author": "Yana Onoyko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amoriah/plants_new/issues"
+  },
+  "homepage": "https://github.com/amoriah/plants_new#readme"
+}
