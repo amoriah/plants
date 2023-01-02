@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./src/css/style.css">
 	<link rel="icon" href="./src/assets/icons/favicon.ico">
 	<link href="index.js">
 
@@ -58,20 +58,22 @@
 		</section>
 		<section class="section about">
 			<div class="wrapper">
-				<h2> 
-					<span class="marker">We are </span>
-					professional experienced 
-					<span class="marker">gardeners</span>
-				</h2>
-				<p class="about__description">Lorem Ipsum 
-				is simply dummy text of the printing 
-				and typesetting industry. Lorem Ipsum has been 
-				the industry's standard dummy text ever since 
-				the 1500s, when an unknown printer took a galley 
-				of type and scrambled it to make a type specimen
-				book. It has survived not only five centuries, 
-				but also the leap into electronic typesetting, 
-				remaining essentially unchanged. </p>
+				<div class="about__description">
+					<h2> 
+						<span class="marker">We are </span>
+						professional experienced 
+						<span class="marker">gardeners</span>
+					</h2>
+					<p>Lorem Ipsum 
+					is simply dummy text of the printing 
+					and typesetting industry. Lorem Ipsum has been 
+					the industry's standard dummy text ever since 
+					the 1500s, when an unknown printer took a galley 
+					of type and scrambled it to make a type specimen
+					book. It has survived not only five centuries, 
+					but also the leap into electronic typesetting, 
+					remaining essentially unchanged. </p>
+				</div>
 				<img 
 					class="about__image" 
 					src="./src/assets/img/houseplant.png" 
@@ -95,56 +97,62 @@
 					</div>
 				</div>
 				<div class="figures">
-					<figure>
+					<figure class="figure">
 						<img 
+							class="figure_img"
 							src="./src/assets/img/first.png" 
 							alt="first">
-						<figcaption>
+						<figcaption class="figcaption">
 							<h3>Garden care</h3>
 							<p>Lorem Ipsum has been the industry</p>
 						</figcaption>
-					</figure>	
-					<figure>
+					</figure class="figure">	
+					<figure class="figure">
 						<img 
+						class="figure_img"
 							src="./src/assets/img/second.png" 
 							alt="second">
-						<figcaption>
+						<figcaption  class="figcaption">
 							<h3>Planting</h3>
 							<p>Lorem Ipsum has been the industry</p>
 						</figcaption>
 					</figure>	
-					<figure>
+					<figure class="figure">
 						<img 
+							class="figure_img"
 							src="./src/assets/img/third.png" 
 							alt="third">
-						<figcaption>
+						<figcaption class="figcaption">
 							<h3>Lawn care</h3>
 							<p>Lorem Ipsum has been the industry</p>
 						</figcaption>
 					</figure>	
-					<figure>
+					<figure class="figure">
 						<img 
+							class="figure_img"
 							src="./src/assets/img/fourth.png" 
 							alt="fourth">
-						<figcaption>
+						<figcaption class="figcaption">
 							<h3>Planting</h3>
 							<p>Lorem Ipsum has been the industry</p>	
 						</figcaption>
 					</figure>	
-					<figure>
+					<figure class="figure">
 						<img 
+							class="figure_img"
 							src="./src/assets/img/fifth.png" 
 							alt="fifth">
-						<figcaption>
+						<figcaption class="figcaption">
 							<h3>Garden care</h3>
 							<p>Lorem Ipsum has been the industry</p>
 						</figcaption>
 					</figure>	
-					<figure>
+					<figure class="figure">
 						<img 
+							class="figure_img"
 							src="./src/assets/img/sixth.png" 
 							alt="assets">
-						<figcaption>
+						<figcaption class="figcaption">
 							<h3>Planting</h3>
 							<p>Lorem Ipsum has been the industry</p>
 						</figcaption>
@@ -182,8 +190,8 @@
 								alt="accordion_btn">
 						</button>
 					</div>
-					<button class="prices__button">
-						<a class="contacts__a" href="#">Contact us</a>
+					<button class="prices__button contact-us">
+						<a class="contact-us__a" href="#">Contact us</a>
 					</button>
 					<img 
 						class="prices__image"
@@ -211,7 +219,7 @@
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer class="footer">
 		<div class="wrapper">
 			<div>2022</div>
 			<div>

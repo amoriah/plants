@@ -1,0 +1,97 @@
+.service {
+	// border: 2px solid red;
+	// margin: auto;
+	// width: 1440px;
+	background-color: $color-green-background;
+	padding-top: 40px;
+	padding-left: 109px;
+	
+}
+
+.service .wrapper {
+	display: flex;
+	flex-direction: column;	
+}
+
+.servise__header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-right: 324px;
+	padding-bottom: 35px;
+	justify-content: space-between;
+}
+
+.servise__header h2 {
+	max-width: 306px;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+}
+
+.servise__buttons {
+}
+
+.service__button {
+	margin-left: 38px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 40px;
+	padding-right: 40px;
+	text-transform: none;
+	font-size: 20px;
+	text-shadow: none;
+	border-radius: 5px;
+	width: 161px;
+	height: 50px;
+	font-family: 'Inika';
+	border: 1px solid $color-orange;	
+}
+
+.servise_a {
+	color: $color-orange;
+}
+
+.figures {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-right: 109px;
+	padding-bottom: 121px;
+}
+
+.figure {
+	margin-top: 55px;
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+}
+
+.figure_img {
+	display: block;
+
+}
+
+.figcaption {
+	font-family: 'Inter';
+	line-height: 35px;
+	text-align: center;
+	border: 1px solid $color-gray-border;
+	border-radius: 0px 0px 20px 20px;
+	padding-bottom: 34px;
+	font-style: normal;
+}
+
+.figcaption h3 {	
+	font-weight: 700;
+	font-size: 20px;
+	color: $color-orange;
+}
+
+.figcaption p {
+	font-weight: 400;
+	font-size: 16px;
+	color: $color-heads;
+}

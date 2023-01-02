@@ -1,0 +1,71 @@
+.prices {
+	// border: 2px solid red;
+	// margin: auto;
+	// width: 1440px;
+	padding-top: 40px;
+	padding-left: 109px;
+	padding-right: 109px;
+	padding-bottom: 115px;
+}
+
+.prices .wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.prices__head {
+	font-family: 'Inter';
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+	font-size: 40px;
+	color: #000000;
+	padding-bottom: 30px;
+
+}
+
+.prices__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prices__variants {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid $color-gray-border;
+	border-radius: 20px;
+	padding-top: 34px;
+	padding-bottom: 34px;
+	padding-left: 41px;
+	padding-right: 41px;
+
+}
+
+.prices__button {
+	width: 250px;
+	height: 50px;
+	background: $color-green-background;
+	border: none;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #000000;
+	transition: 0.3s;
+}
+
+.prices__image {
+	padding-left: 54px;
+}
+
+.prices__button .contact-us {
+	font-family: 'Inika';
+	text-transform: none;
+	background-color: $color-white-background;
+	color: $color-orange;
+	border: 1px solid $color-orange;
+	border-radius: 5px;
+	font-size: 20px;
+	text-shadow: none;
+}

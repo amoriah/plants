@@ -56,10 +56,37 @@ body {
 }
 
 h1 {
-	color:  $color-heads;
 	max-width: 549px;
 	font-family: "Inter";
 	font-weight: 700;
 	font-size: 44px;
 	line-height: 54px;
+}
+
+h2 {
+	max-width: 549px;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 50px;
+}
+
+.about h2 {
+	color: $color-orange;
+	font-weight: lighter;
+	font-size: 40px;
+}
+
+h3 {
+	color: $color-orange;
+	font-weight: 700;
+	font-size: 20px;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.marker {
+	color: $color-green-silable;
 }
