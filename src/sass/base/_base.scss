@@ -44,13 +44,22 @@
 
 html {
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-size: 1.6rem;
 	font-family: 'Inter';
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 h1 {
-	
+	color:  $color-heads;
+	max-width: 549px;
+	font-family: "Inter";
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 54px;
 }
