@@ -1,10 +1,8 @@
 .footer {
+	background-color: $color-white-background;
 }
 
 .footer .wrapper {
-	// margin: auto;
-	// width: 1440px;
-	// border: 2px solid red;
 	font-family: 'Inter';
 	padding: 35px 109px 29px 109px ;
 	display: flex;
@@ -24,13 +22,6 @@
 	transition: 0.5s;
 
 }
-
-// .foo {
-// 	line-height: 50px;	
-// 	color: #000000;
-// 	text-decoration: none;
-// 	transition: 0.5s;
-// }
 
 .footer_a:hover, 
 .footer_a:focus, 

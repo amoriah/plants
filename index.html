@@ -22,17 +22,17 @@
 			</div>
 			<nav class="header__navigation">
 				<ul class="navigation">
-					<li><a class="header_a" href="#">Home</a></li>
-					<li><a class="header_a" href="#">About us</a></li>
-					<li><a class="header_a" href="#">Service</a></li>
-					<li><a class="header_a" href="#">Price</a></li>
-					<li><a class="header_a" href="#">Contacts</a></li>
+					<li><a class="header_a" href="#welcome">Home</a></li>
+					<li><a class="header_a" href="#about">About us</a></li>
+					<li><a class="header_a" href="#service">Service</a></li>
+					<li><a class="header_a" href="#prices">Price</a></li>
+					<li><a class="header_a" href="#contacts">Contacts</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main class="main">
-		<section class="section welcome">
+		<section class="section welcome" id="welcome">
 			<div class="wrapper">
 				<img 
 					class="welcome__image" 
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section about">
+		<section class="section about" id="about">
 			<div class="wrapper">
 				<div class="about__description">
 					<h2> 
@@ -80,7 +80,7 @@
 					alt="houseplant">
 			</div>
 		</section>
-		<section class="section service">
+		<section class="section service" id="service">
 			<div class="wrapper">
 				<div class="servise__header">
 					<h2><span class="marker">Service and our projects</span></h2>
@@ -160,7 +160,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section prices">
+		<section class="section prices" id="prices">
 			<div class="wrapper">
 				<div class="prices__head">
 					<h2>Prices</h2>
@@ -190,17 +190,19 @@
 								alt="accordion_btn">
 						</button>
 					</div>
-					<button class="prices__button contact-us">
-						<a class="contact-us__a" href="#">Contact us</a>
-					</button>
-					<img 
-						class="prices__image"
-						src="./src/assets/img/leafs_mini.png" 
-						alt="leafs_mini">
+					<div class="prices__button__contact-us">
+						<button class="contact-us">
+							<a class="contact-us__a" href="#">Contact us</a>
+						</button>
+						<img 
+							class="prices__image"
+							src="./src/assets/img/leafs_mini.png" 
+							alt="leafs_mini">
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section contacts">
+		<section class="section contacts" id="contacts">
 			<div class="wrapper">
 				<img 
 					class="contacts__image"

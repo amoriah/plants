@@ -44,6 +44,7 @@
 
 html {
 	font-size: 10px;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
@@ -52,7 +53,6 @@ body {
 	font-family: 'Inter';
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 h1 {
@@ -80,7 +80,6 @@ h3 {
 	color: $color-orange;
 	font-weight: 700;
 	font-size: 20px;
-
 }
 
 a {
@@ -90,3 +89,4 @@ a {
 .marker {
 	color: $color-green-silable;
 }
+

@@ -11,12 +11,10 @@
 }
 
 .header__logo {
-	// border: 2px solid red;
-	// color: red;
 	display: flex;
 	padding-left: 111px;
-	margin-top: 52px;
-	margin-bottom: 60px;
+	padding-top: 52px;
+	padding-bottom: 60px;
 }
 
 .logo__a {
@@ -24,7 +22,7 @@
 }
 
 .header__navigation {
-
+	padding-right: 109px;
 }
 
 .navigation {
@@ -35,7 +33,7 @@
 .header_a {
 	margin-left: 46px;
 	color: $color-link-items;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 .header_a:hover,  .header_a:focus, .header_a:active {

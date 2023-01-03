@@ -9,6 +9,7 @@
 
 html {
   font-size: 10px;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -17,7 +18,6 @@ body {
   font-family: "Inter";
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 h1 {
@@ -56,7 +56,9 @@ a {
 }
 
 .wrapper {
+  margin: auto;
   max-width: 1440px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -74,12 +76,16 @@ a {
 .header__logo {
   display: flex;
   padding-left: 111px;
-  margin-top: 52px;
-  margin-bottom: 60px;
+  padding-top: 52px;
+  padding-bottom: 60px;
 }
 
 .logo__a {
   color: black;
+}
+
+.header__navigation {
+  padding-right: 109px;
 }
 
 .navigation {
@@ -90,7 +96,7 @@ a {
 .header_a {
   margin-left: 46px;
   color: #010201;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .header_a:hover, .header_a:focus, .header_a:active {
@@ -99,21 +105,23 @@ a {
 }
 
 .welcome {
-  margin: auto;
   background-color: #EDF2EC;
   color: #717171;
+}
+
+.welcome .wrapper {
+  display: flex;
+  height: 532px;
   padding-top: 62px;
   padding-left: 79px;
   padding-bottom: 62px;
   padding-right: 139px;
 }
 
-.welcome .wrapper {
-  display: flex;
-}
-
 .welcome__content {
-  padding-left: 224.2px;
+  margin-left: 224.2px;
+  width: 549px;
+  height: 346px;
 }
 
 .welcome__description {
@@ -124,6 +132,11 @@ a {
   line-height: 35px;
   padding-bottom: 48px;
   color: #636060;
+}
+
+.welcome__image {
+  width: 448px;
+  height: 407px;
 }
 
 .welcome__button {
@@ -157,14 +170,33 @@ a {
 }
 
 .about {
+  background-color: #FFFFFF;
+  color: #717171;
+}
+
+.about .wrapper {
   padding-top: 93px;
   padding-left: 109px;
   padding-bottom: 94px;
   padding-right: 109px;
+  display: flex;
+  align-items: center;
 }
 
-.about .wrapper {
-  display: flex;
+.about__description {
+  width: 605px;
+  height: 350px;
+  line-height: 30px;
+}
+
+.about__description p {
+  margin-top: 40px;
+}
+
+.about h2 {
+  width: 463px;
+  height: 102px;
+  line-height: 52px;
 }
 
 .about__image {
@@ -173,11 +205,11 @@ a {
 
 .service {
   background-color: #EDF2EC;
-  padding-top: 40px;
-  padding-left: 109px;
 }
 
 .service .wrapper {
+  padding-top: 40px;
+  padding-left: 109px;
   display: flex;
   flex-direction: column;
 }
@@ -213,6 +245,7 @@ a {
   height: 50px;
   font-family: "Inika";
   border: 1px solid #E06733;
+  background-color: #EDF2EC;
 }
 
 .servise_a {
@@ -262,13 +295,14 @@ a {
 }
 
 .prices {
+  background-color: #FFFFFF;
+}
+
+.prices .wrapper {
   padding-top: 40px;
   padding-left: 109px;
   padding-right: 109px;
   padding-bottom: 115px;
-}
-
-.prices .wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -291,8 +325,10 @@ a {
 .prices__variants {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  width: 332px;
+  height: 282.01px;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   padding-top: 34px;
@@ -313,28 +349,40 @@ a {
   transition: 0.3s;
 }
 
+.prices__button__contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .prices__image {
   padding-left: 54px;
 }
 
-.prices__button .contact-us {
+.contact-us {
   font-family: "Inika";
-  text-transform: none;
   background-color: #FFFFFF;
-  color: #E06733;
   border: 1px solid #E06733;
   border-radius: 5px;
   font-size: 20px;
-  text-shadow: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.contact-us a {
+  color: #E06733;
+  line-height: 26px;
 }
 
 .contacts {
   background-color: #EDF2EC;
-  padding: 60px 109px 0px 109px;
   font-size: 40px;
 }
 
 .contacts .wrapper {
+  padding: 60px 109px 0px 109px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -342,7 +390,7 @@ a {
 
 .contacts__list {
   list-style-type: none;
-  padding-top: 128px;
+  padding-top: 100px;
 }
 
 .contacts__list_item {
@@ -357,6 +405,14 @@ a {
   letter-spacing: 0.05em;
   padding-left: 20px;
   color: var(--heads-color);
+}
+
+.contacts__image_icon {
+  padding-left: 340px;
+}
+
+.footer {
+  background-color: #FFFFFF;
 }
 
 .footer .wrapper {

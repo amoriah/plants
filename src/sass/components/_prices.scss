@@ -1,14 +1,12 @@
 .prices {
-	// border: 2px solid red;
-	// margin: auto;
-	// width: 1440px;
+	background-color: $color-white-background;
+}
+
+.prices .wrapper {
 	padding-top: 40px;
 	padding-left: 109px;
 	padding-right: 109px;
 	padding-bottom: 115px;
-}
-
-.prices .wrapper {
 	display: flex;
 	flex-direction: column;
 }
@@ -32,8 +30,10 @@
 .prices__variants {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+	width: 332px;
+	height: 282.01px;
 	border: 1px solid $color-gray-border;
 	border-radius: 20px;
 	padding-top: 34px;
@@ -55,17 +55,29 @@
 	transition: 0.3s;
 }
 
+.prices__button__contact-us {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
 .prices__image {
 	padding-left: 54px;
 }
 
-.prices__button .contact-us {
+.contact-us {
 	font-family: 'Inika';
-	text-transform: none;
 	background-color: $color-white-background;
-	color: $color-orange;
 	border: 1px solid $color-orange;
 	border-radius: 5px;
 	font-size: 20px;
-	text-shadow: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.contact-us a {
+	color: $color-orange;
+	line-height: 26px;
 }

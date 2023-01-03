@@ -1,14 +1,10 @@
 .service {
-	// border: 2px solid red;
-	// margin: auto;
-	// width: 1440px;
 	background-color: $color-green-background;
-	padding-top: 40px;
-	padding-left: 109px;
-	
 }
 
 .service .wrapper {
+	padding-top: 40px;
+	padding-left: 109px;	
 	display: flex;
 	flex-direction: column;	
 }
@@ -47,6 +43,7 @@
 	height: 50px;
 	font-family: 'Inika';
 	border: 1px solid $color-orange;	
+	background-color: $color-green-background;
 }
 
 .servise_a {

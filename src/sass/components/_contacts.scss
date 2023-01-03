@@ -1,26 +1,19 @@
 .contacts {
-	// border: 2px solid red;
-	// margin: auto;
-	// width: 1440px;
 	background-color: $color-green-background;
-	padding: 60px 109px 0px 109px ;
 	font-size: 40px;
 }
 
 .contacts .wrapper {
+	padding: 60px 109px 0px 109px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 
 }
 
-.contacts__image {
-	// padding-left: 340px;
-}
-
 .contacts__list {
 	list-style-type: none;
-	padding-top: 128px;
+	padding-top: 100px;
 }
 
 .contacts__list_item {
@@ -37,11 +30,6 @@
 	color: var(--heads-color);
 }
 
-
-.contacts__a {
-
-}
-
 .contacts__image_icon {
-
+	padding-left: 340px;
 }
