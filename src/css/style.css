@@ -442,4 +442,13 @@ a {
   cursor: pointer;
 }
 
+.logo-svg,
+.logo__a {
+  cursor: pointer;
+}
+.logo-svg:hover .logo-path,
+.logo__a:hover .logo-path {
+  fill: #499A18;
+}
+
 /*# sourceMappingURL=style.css.map */
