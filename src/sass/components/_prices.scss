@@ -12,11 +12,10 @@
 }
 
 .prices__head {
-	font-family: 'Inter';
+	// @include font(40px, 700, 26px);
 	display: flex;
 	justify-content: space-between;
 	text-align: right;
-	font-size: 40px;
 	color: #000000;
 	padding-bottom: 30px;
 
@@ -44,13 +43,12 @@
 }
 
 .prices__button {
+	@include font(20px, 700, 0px);
 	width: 250px;
 	height: 50px;
 	background: $color-green-background;
 	border: none;
 	border-radius: 20px;
-	font-weight: 700;
-	font-size: 20px;
 	color: #000000;
 	transition: 0.3s;
 }
@@ -66,11 +64,10 @@
 }
 
 .contact-us {
-	font-family: 'Inika';
+	@include font(20px, 400, 26px, 'Inika');
 	background-color: $color-white-background;
 	border: 1px solid $color-orange;
 	border-radius: 5px;
-	font-size: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 12px;
@@ -79,5 +76,4 @@
 
 .contact-us a {
 	color: $color-orange;
-	line-height: 26px;
 }

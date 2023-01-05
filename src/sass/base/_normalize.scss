@@ -347,10 +347,11 @@
   [hidden] {
 	display: none;
   }
-//   Footer
-//   © 2023 GitHub, Inc.
-//   Footer navigation
-//   Terms
-//   Privacy
-//   Security
-  
+
+section, header, main, footer {
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+}

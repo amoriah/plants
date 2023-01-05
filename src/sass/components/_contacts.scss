@@ -17,14 +17,12 @@
 }
 
 .contacts__list_item {
-	font-family: 'Inter';
+	@include font(20px, 400, 50px);
 	height: 50px;
 	width: 450px;
 	background: $color-contacts-list;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 0px;
-	font-size: 20px;
-	line-height: 50px;
 	letter-spacing: 0.05em;
 	padding-left: 20px;
 	color: var(--heads-color);

@@ -20,28 +20,22 @@
 }
 
 .servise__header h2 {
+	@include font(40px, 400, 52px);
 	max-width: 306px;
-	font-weight: 400;
-	font-size: 40px;
-	line-height: 52px;
-}
-
-.servise__buttons {
 }
 
 .service__button {
+	@include font(20px, 400, 0px, 'Inika');
 	margin-left: 38px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-left: 40px;
 	padding-right: 40px;
 	text-transform: none;
-	font-size: 20px;
 	text-shadow: none;
 	border-radius: 5px;
 	width: 161px;
 	height: 50px;
-	font-family: 'Inika';
 	border: 1px solid $color-orange;	
 	background-color: $color-green-background;
 }
@@ -72,23 +66,16 @@
 }
 
 .figcaption {
-	font-family: 'Inter';
-	line-height: 35px;
+	// font-family: 'Inter';
+	// line-height: 35px;
 	text-align: center;
 	border: 1px solid $color-gray-border;
 	border-radius: 0px 0px 20px 20px;
 	padding-bottom: 34px;
-	font-style: normal;
-}
-
-.figcaption h3 {	
-	font-weight: 700;
-	font-size: 20px;
-	color: $color-orange;
+	// font-style: normal;
 }
 
 .figcaption p {
-	font-weight: 400;
-	font-size: 16px;
+	@include font(16px, 400, 20px);
 	color: $color-heads;
 }

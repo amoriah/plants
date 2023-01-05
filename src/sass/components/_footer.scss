@@ -3,13 +3,12 @@
 }
 
 .footer .wrapper {
-	font-family: 'Inter';
+	@include font(20px, 400, 0px);
 	padding: 35px 109px 29px 109px ;
 	display: flex;
 	flex-direction:row;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 20px;
 	color: #000000;
 	font-weight: lighter;
 }
@@ -20,7 +19,6 @@
 	color: #000000;
 	text-decoration: none;
 	transition: 0.5s;
-
 }
 
 .footer_a:hover, 

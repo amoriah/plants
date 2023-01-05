@@ -44,7 +44,6 @@
 
 html {
 	font-size: 10px;
-	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
@@ -56,30 +55,23 @@ body {
 }
 
 h1 {
-	max-width: 549px;
-	font-family: "Inter";
-	font-weight: 700;
-	font-size: 44px;
-	line-height: 54px;
+	// max-width: 549px;
+	@include font(44px, 700, 54px);
 }
 
 h2 {
+	@include font(44px, 700, 50px);
 	max-width: 549px;
-	font-weight: 700;
-	font-size: 44px;
-	line-height: 50px;
 }
 
 .about h2 {
+	@include font(40px, 400, 50px);
 	color: $color-orange;
-	font-weight: lighter;
-	font-size: 40px;
 }
 
 h3 {
+	@include font(20px, 700, 40px);
 	color: $color-orange;
-	font-weight: 700;
-	font-size: 20px;
 }
 
 a {
