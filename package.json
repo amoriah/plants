@@ -15,8 +15,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amoriah/plants_new/issues"
-  },
-  "dependencies": {
-    "normalize-scss": "^7.0.1"
   }
 }
