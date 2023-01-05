@@ -1,6 +1,14 @@
+// Abstracts
 @import "./abstract/constants";
-@import "./base/base";
+@import "./abstract/placeholders";
+@import "./abstract/mixins";
+
 @import "./layouts/wrapper";
+
+// Base
+@import "./base/base";
+@import "./base/logo";
+@import "./base/buttons";
 
 // Components
 @import "./components/header";
@@ -10,7 +18,3 @@
 @import "./components/prices";
 @import "./components/contacts";
 @import "./components/footer";
-
-// Base
-@import "./base/logo";
-@import "./base/buttons";

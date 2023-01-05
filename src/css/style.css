@@ -1,3 +1,13 @@
+.logo-path {
+  transition: all 0.3ms ease-out;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
 /* inika-regular - latin */
 /* inika-700 - latin */
 /* inter-regular - latin */
@@ -55,10 +65,14 @@ a {
   color: #499A18;
 }
 
-.wrapper {
-  margin: auto;
-  max-width: 1440px;
-  box-sizing: border-box;
+.logo-svg,
+.logo__a {
+  cursor: pointer;
+  color: black;
+}
+.logo-svg:hover .logo-path,
+.logo__a:hover .logo-path {
+  fill: #499A18;
 }
 
 .header {
@@ -78,10 +92,6 @@ a {
   padding-left: 111px;
   padding-top: 52px;
   padding-bottom: 60px;
-}
-
-.logo__a {
-  color: black;
 }
 
 .header__navigation {
@@ -440,15 +450,6 @@ a {
 .footer_a:active {
   text-shadow: 1px 1px #FFFFFF, 2px 2px black;
   cursor: pointer;
-}
-
-.logo-svg,
-.logo__a {
-  cursor: pointer;
-}
-.logo-svg:hover .logo-path,
-.logo__a:hover .logo-path {
-  fill: #499A18;
 }
 
 /*# sourceMappingURL=style.css.map */

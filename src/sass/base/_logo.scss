@@ -1,6 +1,11 @@
+.logo-path {
+	@extend %transition;
+}
+
 .logo-svg,
 .logo__a {
 	cursor: pointer;
+	color: black;
 	&:hover {
 		.logo-path {
 			fill: $color-green-silable;
@@ -8,12 +13,3 @@
 	}
 }
 
-// .logo__a {
-// 	transition: 0.3s;
-// 	&:hover {
-// 		text-shadow:
-// 		1px 1px $color-white-background,
-// 		2px 2px $color-link-items;
-// 		cursor: pointer;
-// 	}
-// }
