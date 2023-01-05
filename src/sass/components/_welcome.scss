@@ -1,28 +1,25 @@
 .welcome {
-	background-color: $color-green-background;
 	color: $color-heads;
+	background-color: $color-green-background;
 }
 
 .welcome .wrapper {
 	display: flex;
 	height: 532px;
-	padding-top: 62px;
-	padding-left: 79px;
-	padding-bottom: 62px;
-	padding-right: 139px;
+	padding: 62px 139px 62px 79px;
 }
 
 .welcome__content {
-	margin-left: 224.2px;
 	width: 549px;
 	height: 346px;
+	margin-left: 224.2px;
 }
 
 .welcome__description {
-	@include font(20px, 400, 35px);
+	color: $color-p;
 	padding-top: 48px;
 	padding-bottom: 48px;
-	color: $color-p;
+	@include font(20px, 400, 35px);
 }
 
 .welcome__image {
@@ -31,19 +28,19 @@
 }
 
 .welcome__button {
-	line-height: 20px;
 	font-size: 16px;
-	padding: 14px 27px;
-	text-transform: uppercase;
-	background-color: $color-green-background;
-	border: 2px solid $color-orange;
-	border-radius: 10px;
 	transition: 0.5s;
+	line-height: 20px;
+	padding: 14px 27px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	border: 2px solid $color-orange;
+	background-color: $color-green-background;
 }
 
 .welcome_link {
-	color: $color-link-items;
 	transition: 0.5s;
+	color: $color-link-items;
 }
 
 .welcome__button:hover,  

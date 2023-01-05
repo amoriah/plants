@@ -12,9 +12,7 @@
 
 .header__logo {
 	display: flex;
-	padding-left: 111px;
-	padding-top: 52px;
-	padding-bottom: 60px;
+	padding: 52px 0px 60px 111px;
 }
 
 .header__navigation {
@@ -27,9 +25,9 @@
 }
 
 .header_a {
+	transition: 0.3s;
 	margin-left: 46px;
 	color: $color-link-items;
-	transition: 0.3s;
 }
 
 .header_a:hover,  .header_a:focus, .header_a:active {

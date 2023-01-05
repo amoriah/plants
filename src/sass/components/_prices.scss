@@ -3,22 +3,18 @@
 }
 
 .prices .wrapper {
-	padding-top: 40px;
-	padding-left: 109px;
-	padding-right: 109px;
-	padding-bottom: 115px;
 	display: flex;
 	flex-direction: column;
+	padding: 40px 109px 115px 109px;
 }
 
 .prices__head {
 	// @include font(40px, 700, 26px);
 	display: flex;
-	justify-content: space-between;
-	text-align: right;
 	color: #000000;
+	text-align: right;
 	padding-bottom: 30px;
-
+	justify-content: space-between;
 }
 
 .prices__content {
@@ -27,30 +23,26 @@
 }
 
 .prices__variants {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
 	width: 332px;
+	display: flex;
 	height: 282.01px;
-	border: 1px solid $color-gray-border;
 	border-radius: 20px;
-	padding-top: 34px;
-	padding-bottom: 34px;
-	padding-left: 41px;
-	padding-right: 41px;
-
+	align-items: center;
+	flex-direction: column;
+	padding: 34px 41px 34px 41px;
+	justify-content: space-around;
+	border: 1px solid $color-gray-border;
 }
 
 .prices__button {
-	@include font(20px, 700, 0px);
 	width: 250px;
 	height: 50px;
-	background: $color-green-background;
 	border: none;
-	border-radius: 20px;
 	color: #000000;
 	transition: 0.3s;
+	border-radius: 20px;
+	@include font(20px, 700, 0px);
+	background: $color-green-background;
 }
 
 .prices__button__contact-us {
@@ -64,14 +56,11 @@
 }
 
 .contact-us {
+	border-radius: 5px;
+	padding: 12px 30px 12px 30px;
+	border: 1px solid $color-orange;
 	@include font(20px, 400, 26px, 'Inika');
 	background-color: $color-white-background;
-	border: 1px solid $color-orange;
-	border-radius: 5px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 12px;
-	padding-bottom: 12px;
 }
 
 .contact-us a {

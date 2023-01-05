@@ -1,31 +1,31 @@
 .contacts {
-	background-color: $color-green-background;
 	font-size: 40px;
+	background-color: $color-green-background;
 }
 
 .contacts .wrapper {
-	padding: 60px 109px 0px 109px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	padding: 60px 109px 0px 109px;
 
 }
 
 .contacts__list {
-	list-style-type: none;
 	padding-top: 100px;
+	list-style-type: none;
 }
 
 .contacts__list_item {
-	@include font(20px, 400, 50px);
 	height: 50px;
 	width: 450px;
-	background: $color-contacts-list;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding-left: 20px;
 	border-radius: 0px;
 	letter-spacing: 0.05em;
-	padding-left: 20px;
 	color: var(--heads-color);
+	@include font(20px, 400, 50px);
+	background: $color-contacts-list;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contacts__image_icon {

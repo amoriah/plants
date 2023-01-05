@@ -3,22 +3,22 @@
 }
 
 .footer .wrapper {
-	@include font(20px, 400, 0px);
-	padding: 35px 109px 29px 109px ;
 	display: flex;
-	flex-direction:row;
-	justify-content: space-between;
-	align-items: center;
 	color: #000000;
+	flex-direction:row;
+	align-items: center;
 	font-weight: lighter;
+	@include font(20px, 400, 0px);
+	justify-content: space-between;
+	padding: 35px 109px 29px 109px;
 }
 
 .footer_a {
 	color: #000000;
-	line-height: 50px;	
 	color: #000000;
-	text-decoration: none;
 	transition: 0.5s;
+	line-height: 50px;	
+	text-decoration: none;
 }
 
 .footer_a:hover, 

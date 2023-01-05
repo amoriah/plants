@@ -3,40 +3,37 @@
 }
 
 .service .wrapper {
+	display: flex;
 	padding-top: 40px;
 	padding-left: 109px;	
-	display: flex;
 	flex-direction: column;	
 }
 
 .servise__header {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	align-items: center;
-	flex-wrap: wrap;
 	padding-right: 324px;
 	padding-bottom: 35px;
 	justify-content: space-between;
 }
 
 .servise__header h2 {
-	@include font(40px, 400, 52px);
 	max-width: 306px;
+	@include font(40px, 400, 52px);
 }
 
 .service__button {
-	@include font(20px, 400, 0px, 'Inika');
-	margin-left: 38px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-left: 40px;
-	padding-right: 40px;
-	text-transform: none;
-	text-shadow: none;
-	border-radius: 5px;
 	width: 161px;
 	height: 50px;
+	text-shadow: none;
+	margin-left: 38px;
+	border-radius: 5px;
+	text-transform: none;
+	padding: 12px 40px 12px 40px;
 	border: 1px solid $color-orange;	
+	@include font(20px, 400, 0px, 'Inika');
 	background-color: $color-green-background;
 }
 
@@ -46,17 +43,17 @@
 
 .figures {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	flex-direction: row;
 	padding-right: 109px;
 	padding-bottom: 121px;
+	justify-content: space-between;
 }
 
 .figure {
+	display: flex;
 	margin-top: 55px;
 	transition: 0.3s;
-	display: flex;
 	flex-direction: column;
 }
 
@@ -66,16 +63,13 @@
 }
 
 .figcaption {
-	// font-family: 'Inter';
-	// line-height: 35px;
 	text-align: center;
-	border: 1px solid $color-gray-border;
-	border-radius: 0px 0px 20px 20px;
 	padding-bottom: 34px;
-	// font-style: normal;
+	border-radius: 0px 0px 20px 20px;
+	border: 1px solid $color-gray-border;
 }
 
 .figcaption p {
-	@include font(16px, 400, 20px);
 	color: $color-heads;
+	@include font(16px, 400, 20px);
 }

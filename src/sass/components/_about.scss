@@ -1,15 +1,12 @@
 .about {
-	background-color: $color-white-background;
 	color: $color-heads;
+	background-color: $color-white-background;
 }
 
 .about .wrapper {
-	padding-top: 93px;
-	padding-left: 109px;
-	padding-bottom: 94px;
-	padding-right: 109px;
 	display: flex;
 	align-items: center;
+	padding: 93px 109px 94px 109px;
 
 }
 
@@ -19,8 +16,8 @@
 }
 
 .about__description p {
-	line-height: 30px;
 	margin-top: 40px;
+	line-height: 30px;
 }
 
 .about h2 {
