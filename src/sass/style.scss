@@ -1,16 +1,16 @@
-@import "./base/normalize";
 // Abstracts
 @import "./abstract/constants";
 @import "./abstract/placeholders";
 @import "./abstract/mixins";
 
-@import "./layouts/wrapper";
-
 // Base
+@import "./base/normalize";
 @import "./base/base";
 @import "./base/logo";
 @import "./base/buttons";
 @import "./base/fonts";
+
+@import "./layouts/wrapper";
 
 // Components
 @import "./components/header";

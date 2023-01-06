@@ -1,5 +1,3 @@
- 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -18,7 +16,6 @@ body {
 }
 
 h1 {
-	// max-width: 549px;
 	@include font(44px, 700, 54px);
 }
 

@@ -1,3 +1,7 @@
+.footer .wrapper a, .welcome_link, .navigation_a, .prices__button, .orange_button, .logo-path {
+  transition: all 0.3s ease-out;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -315,15 +319,6 @@ section, header, main, footer {
   box-sizing: border-box;
 }
 
-.footer .wrapper a, .welcome_link, .navigation_a, .prices__button, .orange_button, .logo-path {
-  transition: all 0.3s ease-out;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1440px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -443,6 +438,11 @@ object {
   font-weight: 700;
   src: local(""), url("../../assets/fonts/inter-v12-latin-700.woff2") format("woff2"), url("../../assets/fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 .header {
   font-size: 16px;
   background-color: #EDF2EC;
