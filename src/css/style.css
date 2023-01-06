@@ -315,7 +315,7 @@ section, header, main, footer {
   box-sizing: border-box;
 }
 
-.footer .wrapper a, .prices__variants .prices__button, .welcome_link, .welcome__content button, .navigation a, .logo-path {
+.footer .wrapper a, .welcome_link, .navigation_a, .prices__button, .orange_button, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -386,6 +386,37 @@ span {
   fill: #499A18;
 }
 
+.orange_button:hover, .orange_button:focus, .orange_button:active {
+  background-color: #E06733;
+  cursor: pointer;
+}
+.orange_button:hover a, .orange_button:focus a, .orange_button:active a {
+  color: white;
+}
+
+.prices__button {
+  width: 250px;
+  text-align: start;
+  padding-left: 40px;
+  padding-right: 17px;
+  height: 50px;
+  border: none;
+  color: #000000;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 0px;
+  background: #EDF2EC;
+}
+.prices__button:hover, .prices__button:focus, .prices__button:active {
+  background-color: #9dab9a;
+  cursor: pointer;
+}
+
 .header {
   font-size: 16px;
   background-color: #EDF2EC;
@@ -407,17 +438,24 @@ span {
   padding-right: 109px;
 }
 
+.home {
+  color: #E06733;
+}
+
 .navigation {
   display: flex;
   list-style-type: none;
 }
-.navigation a {
+.navigation_a {
   margin-left: 46px;
   color: #010201;
 }
-.navigation a:hover, .navigation a:focus, .navigation a:active {
+.navigation_a:hover, .navigation_a:focus, .navigation_a:active {
   text-shadow: 1px 1px #FFFFFF, 2px 2px #010201;
   cursor: pointer;
+}
+.navigation .home {
+  color: #E06733;
 }
 
 .welcome {
@@ -451,10 +489,6 @@ span {
   text-transform: uppercase;
   border: 2px solid #E06733;
   background-color: #EDF2EC;
-}
-.welcome__content button:hover, .welcome__content button:focus, .welcome__content button:active {
-  background-color: #E06733;
-  cursor: pointer;
 }
 
 .welcome_link {
@@ -621,24 +655,6 @@ figure figcaption p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
-.prices__variants .prices__button {
-  width: 250px;
-  text-align: start;
-  padding-left: 40px;
-  padding-right: 17px;
-  height: 50px;
-  border: none;
-  color: #000000;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Inter";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 0px;
-  background: #EDF2EC;
 }
 
 .prices__contact-us {

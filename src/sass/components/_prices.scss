@@ -26,25 +26,25 @@
 	padding: 34px 41px 34px 41px;
 	border: 1px solid $color-gray-border;
 	@include flex($align: center, $direction: column, $justify: space-around);
-	.prices__button {
-		width: 250px;
-		text-align: start;
-		padding-left: 40px;
-		padding-right: 17px;
-		height: 50px;
-		border: none;
-		color: #000000;
-		@extend %transition;
-		border-radius: 20px;
-		display: inline-flex;
-		align-items: center;
-		justify-content: space-between;
-		@include font(20px, 700, 0px);
-		background: $color-green-background;
-		// .img {
-		// 	// text-align: end;
-		// }
-	}
+	// .prices__button {
+	// 	width: 250px;
+	// 	text-align: start;
+	// 	padding-left: 40px;
+	// 	padding-right: 17px;
+	// 	height: 50px;
+	// 	border: none;
+	// 	color: #000000;
+	// 	// @extend %transition;
+	// 	border-radius: 20px;
+	// 	display: inline-flex;
+	// 	align-items: center;
+	// 	justify-content: space-between;
+	// 	@include font(20px, 700, 0px);
+	// 	background: $color-green-background;
+	// 	// .img {
+	// 	// 	// text-align: end;
+	// 	// }
+	// }
 }
 
 .prices__contact-us {

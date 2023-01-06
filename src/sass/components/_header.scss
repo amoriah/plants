@@ -16,10 +16,14 @@
 	padding-right: 109px;
 }
 
+.home {
+	color: $color-orange;
+}
+
 .navigation {
 	display: flex;
 	list-style-type: none;
-	a {
+	&_a {
 		@extend %transition;
 		margin-left: 46px;
 		color: $color-link-items;
@@ -31,5 +35,8 @@
 			2px 2px $color-link-items;
 			cursor: pointer;
 		}
+	}
+	.home {
+		color: $color-orange;
 	}
 }

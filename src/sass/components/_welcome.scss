@@ -11,6 +11,8 @@
 
 .welcome__content {
 	margin-left: 224.2px;
+	// box-sizing: border-box;
+	// border: 2px solid red;
 	p {
 		color: $color-p;
 		padding-top: 48px;
@@ -19,19 +21,12 @@
 	}
 	button {
 		font-size: 16px;
-		@extend %transition;
 		line-height: 20px;
 		padding: 14px 27px;
 		border-radius: 10px;
 		text-transform: uppercase;
 		border: 2px solid $color-orange;
 		background-color: $color-green-background;
-		&:hover,  
-		&:focus, 
-		&:active {
-			background-color: $color-orange;
-			cursor: pointer;
-		}
 	}
 }
 
