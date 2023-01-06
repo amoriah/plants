@@ -4,7 +4,7 @@
 	h2 {
 		width: 463px;
 		color: $color-orange;
-		@include font(40px, 400, 52px);
+		@include font(40px, 400, 52px, 'Inika');
 	}
 }
 
@@ -21,6 +21,7 @@
 	width: 605px;
 	height: 350px;
 	p {
+		font-family: 'Inter', sans-serif;
 		margin-top: 40px;
 		line-height: 30px;
 	}

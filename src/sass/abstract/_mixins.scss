@@ -1,4 +1,4 @@
-@mixin font($size, $weight, $height, $font: 'Inter') {
+@mixin font($size, $weight, $height, $font: ('Inter', sans-serif)) {
 	font-family: $font;
 	font-size: $size;
 	font-weight: $weight;
@@ -27,3 +27,5 @@
 @mixin media-mobilesmall {
 	@media (max-width: $mobile-small-width) { @content; }
 }
+
+// @media screen and

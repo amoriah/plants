@@ -15,7 +15,7 @@
 	@include flex($align: center, $justify: space-between);
 	h2 {
 		max-width: 306px;
-		@include font(40px, 400, 52px);
+		@include font(40px, 400, 52px, 'Inika');
 	}
 }
 

@@ -6,6 +6,9 @@
 .contacts .wrapper {
 	@include flex($justify: space-around);
 	padding: 60px 109px 0px 109px;
+	h2 {
+		font-family: 'Inter', sans-serif;
+	}
 	ul {
 		padding-top: 100px;
 		list-style-type: none;
