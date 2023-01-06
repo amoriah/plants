@@ -372,6 +372,10 @@ span {
   color: #499A18;
 }
 
+object {
+  pointer-events: none;
+}
+
 .logo-svg,
 .logo__a {
   cursor: pointer;
@@ -660,14 +664,14 @@ figure figcaption p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: right;
+  align-items: end;
 }
 
 .prices__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: right;
+  align-items: end;
 }
 
 .prices__variants {

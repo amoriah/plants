@@ -11,11 +11,11 @@
 	color: #000000;
 	text-align: right;
 	padding-bottom: 30px;
-	@include flex($align: right, $justify: space-between);
+	@include flex($align: end, $justify: space-between);
 }
 
 .prices__content {
-	@include flex($align: right, $justify: space-between);
+	@include flex($align: end, $justify: space-between);
 }
 
 .prices__variants {
