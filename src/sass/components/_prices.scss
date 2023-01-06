@@ -35,8 +35,6 @@
 		border: 1px solid $color-orange;
 		@include font(20px, 700, 26px, 'Inika');
 		background-color: $color-white-background;
-		a {
-			color: $color-orange;
-		}
+		color: $color-orange;
 	}
 }

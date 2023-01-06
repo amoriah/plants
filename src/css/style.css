@@ -320,7 +320,7 @@ section, header, main, footer {
 }
 
 .wrapper {
-  margin: auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -384,10 +384,8 @@ span {
 
 .orange_button:hover, .orange_button:focus, .orange_button:active {
   background-color: #E06733;
-  cursor: pointer;
-}
-.orange_button:hover a, .orange_button:focus a, .orange_button:active a {
   color: white;
+  cursor: pointer;
 }
 
 .prices__button {
@@ -494,7 +492,10 @@ span {
 }
 
 .welcome__content {
+  width: 549px;
+  height: 340px;
   margin-left: 224.2px;
+  display: block;
 }
 .welcome__content p {
   color: #636060;
@@ -602,8 +603,6 @@ span {
   font-weight: 400;
   line-height: 0px;
   background-color: #EDF2EC;
-}
-.service__button a {
   color: #E06733;
 }
 
@@ -698,8 +697,6 @@ figure figcaption p {
   font-weight: 700;
   line-height: 26px;
   background-color: #FFFFFF;
-}
-.prices__contact-us button a {
   color: #E06733;
 }
 

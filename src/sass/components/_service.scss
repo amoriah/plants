@@ -30,9 +30,7 @@
 	border: 1px solid $color-orange;	
 	@include font(20px, 400, 0px, 'Inika');
 	background-color: $color-green-background;
-	a {
-		color: $color-orange;
-	}
+	color: $color-orange;
 }
 
 .figures {

@@ -4,10 +4,8 @@
 	&:focus, 
 	&:active {
 		background-color: $color-orange;
+		color: white;
 		cursor: pointer;
-		a {
-			color: white;
-		}
 	}
 }
 

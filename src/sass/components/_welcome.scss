@@ -10,9 +10,10 @@
 }
 
 .welcome__content {
+	width: 549px;
+	height: 340px;
 	margin-left: 224.2px;
-	// box-sizing: border-box;
-	// border: 2px solid red;
+	display: block;
 	p {
 		color: $color-p;
 		padding-top: 48px;
