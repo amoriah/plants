@@ -315,7 +315,7 @@ section, header, main, footer {
   box-sizing: border-box;
 }
 
-.footer .wrapper a, .welcome_link, .welcome__content button, .navigation a, .logo-path {
+.footer .wrapper a, .prices__variants .prices__button, .welcome_link, .welcome__content button, .navigation a, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -630,7 +630,6 @@ figure figcaption p {
   height: 50px;
   border: none;
   color: #000000;
-  transition: 0.3s;
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
