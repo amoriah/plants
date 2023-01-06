@@ -624,19 +624,22 @@ figure figcaption p {
 }
 .prices__variants .prices__button {
   width: 250px;
+  text-align: start;
+  padding-left: 40px;
+  padding-right: 17px;
   height: 50px;
   border: none;
   color: #000000;
   transition: 0.3s;
   border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Inter";
   font-size: 20px;
   font-weight: 700;
   line-height: 0px;
   background: #EDF2EC;
-}
-.prices__variants img {
-  padding-left: 54px;
 }
 
 .prices__contact-us {
