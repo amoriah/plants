@@ -4,30 +4,27 @@
 }
 
 .contacts .wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	@include flex($justify: space-around);
 	padding: 60px 109px 0px 109px;
-
-}
-
-.contacts__list {
-	padding-top: 100px;
-	list-style-type: none;
-}
-
-.contacts__list_item {
-	height: 50px;
-	width: 450px;
-	padding-left: 20px;
-	border-radius: 0px;
-	letter-spacing: 0.05em;
-	color: var(--heads-color);
-	@include font(20px, 400, 50px);
-	background: $color-contacts-list;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.contacts__image_icon {
-	padding-left: 340px;
+	ul {
+		padding-top: 100px;
+		list-style-type: none;
+		li {
+			height: 50px;
+			width: 450px;
+			padding-left: 20px;
+			border-radius: 0px;
+			letter-spacing: 0.05em;
+			color: var(--heads-color);
+			@include font(20px, 400, 50px);
+			background: $color-contacts-list;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			img {
+				padding-left: 340px;
+			}
+			a {
+				color: $color-p
+			}
+		}
+	}
 }

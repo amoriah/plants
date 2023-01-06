@@ -6,53 +6,43 @@
 .welcome .wrapper {
 	display: flex;
 	height: 532px;
-	padding: 62px 139px 62px 79px;
+	padding: 62px 100px 62px 79px;
 }
 
 .welcome__content {
-	width: 549px;
-	height: 346px;
 	margin-left: 224.2px;
-}
-
-.welcome__description {
-	color: $color-p;
-	padding-top: 48px;
-	padding-bottom: 48px;
-	@include font(20px, 400, 35px);
-}
-
-.welcome__image {
-	width: 448px;
-	height: 407px;
-}
-
-.welcome__button {
-	font-size: 16px;
-	transition: 0.5s;
-	line-height: 20px;
-	padding: 14px 27px;
-	border-radius: 10px;
-	text-transform: uppercase;
-	border: 2px solid $color-orange;
-	background-color: $color-green-background;
+	p {
+		color: $color-p;
+		padding-top: 48px;
+		padding-bottom: 48px;
+		@include font(20px, 400, 35px);
+	}
+	button {
+		font-size: 16px;
+		@extend %transition;
+		line-height: 20px;
+		padding: 14px 27px;
+		border-radius: 10px;
+		text-transform: uppercase;
+		border: 2px solid $color-orange;
+		background-color: $color-green-background;
+		&:hover,  
+		&:focus, 
+		&:active {
+			background-color: $color-orange;
+			cursor: pointer;
+		}
+	}
 }
 
 .welcome_link {
-	transition: 0.5s;
+	@extend %transition;
 	color: $color-link-items;
+	&:hover, 
+	&:focus, 
+	&:active {
+		color: white;
+		cursor: pointer;
+	}
 }
 
-.welcome__button:hover,  
-.welcome__button:focus, 
-.welcome__button:active {
-	background-color: $color-orange;
-	cursor: pointer;
-}
-
-.welcome_link:hover, 
-.welcome_link:focus, 
-.welcome_link:active {
-	color: white;
-	cursor: pointer;
-}

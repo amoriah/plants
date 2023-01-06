@@ -4,10 +4,7 @@
 }
 
 .header  .wrapper {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	@include flex($align: center, $justify: space-between);
 }
 
 .header__logo {
@@ -22,17 +19,17 @@
 .navigation {
 	display: flex;
 	list-style-type: none;
-}
-
-.header_a {
-	transition: 0.3s;
-	margin-left: 46px;
-	color: $color-link-items;
-}
-
-.header_a:hover,  .header_a:focus, .header_a:active {
-	text-shadow:
-    1px 1px $color-white-background,
-    2px 2px $color-link-items;
-	cursor: pointer;
+	a {
+		@extend %transition;
+		margin-left: 46px;
+		color: $color-link-items;
+		&:hover, 
+		&:focus, 
+		&:active {
+			text-shadow:
+			1px 1px $color-white-background,
+			2px 2px $color-link-items;
+			cursor: pointer;
+		}
+	}
 }

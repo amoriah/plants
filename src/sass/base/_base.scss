@@ -64,11 +64,6 @@ h2 {
 	max-width: 549px;
 }
 
-.about h2 {
-	@include font(40px, 400, 50px);
-	color: $color-orange;
-}
-
 h3 {
 	@include font(20px, 700, 40px);
 	color: $color-orange;
@@ -78,7 +73,7 @@ a {
 	text-decoration: none;
 }
 
-.marker {
+span {
 	color: $color-green-silable;
 }
 

@@ -1,31 +1,27 @@
 .about {
 	color: $color-heads;
 	background-color: $color-white-background;
+	h2 {
+		width: 463px;
+		color: $color-orange;
+		@include font(40px, 400, 52px);
+	}
 }
 
 .about .wrapper {
-	display: flex;
-	align-items: center;
+	@include flex($align: center);
 	padding: 93px 109px 94px 109px;
+	img {
+		padding-left: 153px;
+	}
 
 }
 
 .about__description {
 	width: 605px;
 	height: 350px;
-}
-
-.about__description p {
-	margin-top: 40px;
-	line-height: 30px;
-}
-
-.about h2 {
-	width: 463px;
-	height: 102px;
-	line-height: 52px;
-}
-
-.about__image {
-	padding-left: 153px;
+	p {
+		margin-top: 40px;
+		line-height: 30px;
+	}
 }

@@ -3,29 +3,23 @@
 }
 
 .footer .wrapper {
-	display: flex;
 	color: #000000;
-	flex-direction:row;
-	align-items: center;
 	font-weight: lighter;
 	@include font(20px, 400, 0px);
-	justify-content: space-between;
 	padding: 35px 109px 29px 109px;
-}
-
-.footer_a {
-	color: #000000;
-	color: #000000;
-	transition: 0.5s;
-	line-height: 50px;	
-	text-decoration: none;
-}
-
-.footer_a:hover, 
-.footer_a:focus, 
-.footer_a:active {
-	text-shadow:
-    1px 1px $color-white-background,
-    2px 2px black;
-	cursor: pointer;
+	@include flex($align: center, $justify: space-between);
+	a {
+		color: #000000;
+		@extend %transition;
+		line-height: 50px;	
+		text-decoration: none;
+		&:hover, 
+		&:focus, 
+		&:active {
+			text-shadow:
+			1px 1px $color-white-background,
+			2px 2px black;
+			cursor: pointer;
+		}
+	}
 }

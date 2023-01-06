@@ -3,66 +3,54 @@
 }
 
 .prices .wrapper {
-	display: flex;
-	flex-direction: column;
 	padding: 40px 109px 115px 109px;
+	@include flex($direction: column);
 }
 
 .prices__head {
 	// @include font(40px, 700, 26px);
-	display: flex;
 	color: #000000;
 	text-align: right;
 	padding-bottom: 30px;
-	justify-content: space-between;
+	@include flex($align: right, $justify: space-between);
 }
 
 .prices__content {
-	display: flex;
-	justify-content: space-between;
+	@include flex($align: right, $justify: space-between);
 }
 
 .prices__variants {
 	width: 332px;
-	display: flex;
 	height: 282.01px;
 	border-radius: 20px;
-	align-items: center;
-	flex-direction: column;
 	padding: 34px 41px 34px 41px;
-	justify-content: space-around;
 	border: 1px solid $color-gray-border;
+	@include flex($align: center, $direction: column, $justify: space-around);
+	.prices__button {
+		width: 250px;
+		height: 50px;
+		border: none;
+		color: #000000;
+		transition: 0.3s;
+		border-radius: 20px;
+		@include font(20px, 700, 0px);
+		background: $color-green-background;
+	}
+	img {
+		padding-left: 54px;
+	}
 }
 
-.prices__button {
-	width: 250px;
-	height: 50px;
-	border: none;
-	color: #000000;
-	transition: 0.3s;
-	border-radius: 20px;
-	@include font(20px, 700, 0px);
-	background: $color-green-background;
-}
-
-.prices__button__contact-us {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.prices__image {
-	padding-left: 54px;
-}
-
-.contact-us {
-	border-radius: 5px;
-	padding: 12px 30px 12px 30px;
-	border: 1px solid $color-orange;
-	@include font(20px, 400, 26px, 'Inika');
-	background-color: $color-white-background;
-}
-
-.contact-us a {
-	color: $color-orange;
+.prices__contact-us {
+	@include flex($direction: column, $justify: space-around);
+	button {
+		border-radius: 5px;
+		padding: 12px 30px 12px 30px;
+		border: 1px solid $color-orange;
+		@include font(20px, 400, 26px, 'Inika');
+		background-color: $color-white-background;
+		a {
+			color: $color-orange;
+		}
+	}
 }

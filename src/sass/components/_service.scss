@@ -3,25 +3,20 @@
 }
 
 .service .wrapper {
-	display: flex;
 	padding-top: 40px;
-	padding-left: 109px;	
-	flex-direction: column;	
+	padding-left: 109px;
+	@include flex($direction: column);
 }
 
 .servise__header {
-	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
 	padding-right: 324px;
 	padding-bottom: 35px;
-	justify-content: space-between;
-}
-
-.servise__header h2 {
-	max-width: 306px;
-	@include font(40px, 400, 52px);
+	@include flex($align: center, $justify: space-between);
+	h2 {
+		max-width: 306px;
+		@include font(40px, 400, 52px);
+	}
 }
 
 .service__button {
@@ -35,41 +30,33 @@
 	border: 1px solid $color-orange;	
 	@include font(20px, 400, 0px, 'Inika');
 	background-color: $color-green-background;
-}
-
-.servise_a {
-	color: $color-orange;
+	a {
+		color: $color-orange;
+	}
 }
 
 .figures {
-	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	padding-right: 109px;
 	padding-bottom: 121px;
-	justify-content: space-between;
+	@include flex($justify: space-between);
 }
 
-.figure {
-	display: flex;
+figure {
 	margin-top: 55px;
 	transition: 0.3s;
-	flex-direction: column;
-}
-
-.figure_img {
-	display: block;
-
-}
-
-.figcaption {
-	text-align: center;
-	padding-bottom: 34px;
-	border-radius: 0px 0px 20px 20px;
-	border: 1px solid $color-gray-border;
-}
-
-.figcaption p {
-	color: $color-heads;
-	@include font(16px, 400, 20px);
+	@include flex($direction: column);
+	img {
+		display: block;
+	}
+	figcaption {
+		text-align: center;
+		padding-bottom: 34px;
+		border-radius: 0px 0px 20px 20px;
+		border: 1px solid $color-gray-border;
+		p {
+			color: $color-heads;
+			@include font(16px, 400, 20px);
+		}
+	}
 }
