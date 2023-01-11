@@ -7,27 +7,27 @@
 	@include flex($justify: space-around);
 	padding: 60px 109px 0px 109px;
 	h2 {
-		font-family: 'Inter', sans-serif;
+		font-family: 'Inika';
+		font-size: 40px;
 	}
-	ul {
-		padding-top: 100px;
+	.contacts__pannel {
+		margin-top: 88px;
+		margin-left: 109px;
 		list-style-type: none;
-		li {
-			height: 50px;
-			width: 450px;
-			padding-left: 20px;
-			border-radius: 0px;
-			letter-spacing: 0.05em;
-			color: var(--heads-color);
-			@include font(20px, 400, 50px);
-			background: $color-contacts-list;
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			img {
-				padding-left: 340px;
-			}
-			a {
-				color: $color-p
-			}
+		height: 50px;
+		width: 450px;
+		padding-left: 20px;
+		border-radius: 0px;
+		letter-spacing: 0.05em;
+		color: var(--heads-color);
+		@include font(20px, 400, 50px);
+		background: $color-contacts-list;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		a {
+			color: $color-p
 		}
-	}
+		img {
+			padding-left: 340px;
+		}
+	}		
 }

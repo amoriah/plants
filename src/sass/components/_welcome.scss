@@ -5,26 +5,35 @@
 
 .welcome .wrapper {
 	display: flex;
-	height: 532px;
-	padding: 62px 100px 62px 79px;
+	// height: 532px;
+	padding: 62px 100px 62px 109px;
+	// border: 2px solid red;
 }
 
 .welcome__content {
-	width: 549px;
+	// box-sizing: border-box;
+	// border: 2px solid red;
+	width: 548px;
 	height: 340px;
 	margin-left: 224.2px;
-	display: block;
+	margin-bottom: 94px;
+	// display: flex;
+	// flex-direction: column;
+	
 	p {
+		// max-width: 100%;
 		color: $color-p;
-		padding-top: 48px;
+		padding-top: 42px;
 		padding-bottom: 48px;
 		@include font(20px, 400, 35px);
 	}
 	button {
 		font-family: 'Inter', sans-serif;
+		// margin-top: 48px;
+		width: 158px;
+		height: 44px;	
 		font-size: 16px;
 		line-height: 20px;
-		padding: 14px 27px;
 		border-radius: 10px;
 		text-transform: uppercase;
 		border: 2px solid $color-orange;

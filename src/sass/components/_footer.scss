@@ -3,6 +3,7 @@
 }
 
 .footer .wrapper {
+	// background-image: url(../../assets/png/leafs.png);
 	color: #000000;
 	font-weight: lighter;
 	@include font(20px, 400, 0px);
@@ -23,3 +24,66 @@
 		}
 	}
 }
+
+.data {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	div:not(:last-child) {
+		padding-right: 20px;
+	}
+
+
+}
+
+.rs-logo {
+	width: 211px;
+	height: 50px;
+}
+
+.social-list {
+	display: flex;
+	// flex-direction: row;
+	// align-items: center;
+	// width: 32px;
+    height: 32px;
+	// box-sizing: border-box;
+}
+
+
+
+.social-list__item {
+	// display: block;
+	align-self: center;
+	width: 32px;
+    height: 32px;
+	// border: 2px solid red;
+	list-style: none;
+	a img {
+		align-items: center;
+	}
+
+}
+
+.social-list__item:not(:last-child) {
+	margin-right: 30px;
+	
+}
+
+.social-list_link-1 {
+	width: 32px;
+    height: 32px;
+}
+.social-list_link-2 {
+	width: 32px;
+    height: 32px;
+}
+.social-list_link-3 {
+	width: 32px;
+    height: 32px;
+}
+.social-list_link-4 {
+	width: 32px;
+    height: 32px;
+}
+

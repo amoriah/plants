@@ -9,6 +9,6 @@ $color-green-background: #EDF2EC;
 $color-white-background: #FFFFFF;
 
 $content-width: 1440px;
-// $tablet-width: 768px;
-// $mobile-big-width: 414px;
-// $mobile-small-width: 375px;
+$tablet-width: 768px;
+$mobile-width: 380px;
+$mobile-small-width: 320px; //достаточно обеспечить отсутствие горизонтальной полосы прокрутки при сохранении всего контента страницы.

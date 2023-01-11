@@ -5,6 +5,7 @@
 
 .header  .wrapper {
 	@include flex($align: center, $justify: space-between);
+	font-family: 'Inika';
 }
 
 .header__logo {
@@ -40,3 +41,4 @@
 		color: $color-orange;
 	}
 }
+

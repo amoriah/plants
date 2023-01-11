@@ -331,7 +331,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Inter";
   display: flex;
   flex-direction: column;
 }
@@ -415,34 +414,67 @@ object {
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../../assets/fonts/inika-v21-latin-regular.woff2") format("woff2"), url("../../assets/fonts/inika-v21-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../assets/fonts/inika-v21-latin-regular.woff2") format("woff2"), url("../assets/fonts/inika-v21-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inika-700 - latin */
 @font-face {
   font-family: "Inika";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../../assets/fonts/inika-v21-latin-700.woff2") format("woff2"), url("../../assets/fonts/inika-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../assets/fonts/inika-v21-latin-700.woff2") format("woff2"), url("../assets/fonts/inika-v21-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-regular - latin */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../../assets/fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../../assets/fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../assets/fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../assets/fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-700 - latin */
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../../assets/fonts/inter-v12-latin-700.woff2") format("woff2"), url("../../assets/fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../assets/fonts/inter-v12-latin-700.woff2") format("woff2"), url("../assets/fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+.header__burger {
+  display: none;
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 24px;
+}
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #717171;
+  position: absolute;
+  left: 0;
+}
+
+.burger__line_1 {
+  top: 0;
+}
+
+.burger__line_2 {
+  top: 33%;
+  transform: translateY(-33%);
+}
+
+.burger__line_3 {
+  top: 66%;
+  transform: translateY(-66%);
+}
+
+.burger__line_4 {
+  bottom: 0;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1440px;
 }
-
 .header {
   font-size: 16px;
   background-color: #EDF2EC;
@@ -453,6 +485,7 @@ object {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: "Inika";
 }
 
 .header__logo {
@@ -491,19 +524,18 @@ object {
 
 .welcome .wrapper {
   display: flex;
-  height: 532px;
-  padding: 62px 100px 62px 79px;
+  padding: 62px 100px 62px 109px;
 }
 
 .welcome__content {
-  width: 549px;
+  width: 548px;
   height: 340px;
   margin-left: 224.2px;
-  display: block;
+  margin-bottom: 94px;
 }
 .welcome__content p {
   color: #636060;
-  padding-top: 48px;
+  padding-top: 42px;
   padding-bottom: 48px;
   font-family: "Inter", sans-serif;
   font-size: 20px;
@@ -512,9 +544,10 @@ object {
 }
 .welcome__content button {
   font-family: "Inter", sans-serif;
+  width: 158px;
+  height: 44px;
   font-size: 16px;
   line-height: 20px;
-  padding: 14px 27px;
   border-radius: 10px;
   text-transform: uppercase;
   border: 2px solid #E06733;
@@ -547,10 +580,12 @@ object {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  justify-content: space-between;
   padding: 93px 109px 94px 109px;
 }
 .about .wrapper img {
-  padding-left: 153px;
+  width: 464px;
+  height: 479px;
 }
 
 .about__description {
@@ -559,6 +594,7 @@ object {
 }
 .about__description p {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
   margin-top: 40px;
   line-height: 30px;
 }
@@ -650,7 +686,7 @@ figure figcaption p {
 }
 
 .prices .wrapper {
-  padding: 40px 109px 115px 109px;
+  padding: 40px 109px 129px 109px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -660,11 +696,15 @@ figure figcaption p {
 .prices__head {
   color: #000000;
   text-align: right;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
+  align-items: center;
+}
+.prices__head h2 {
+  font-size: 40px;
 }
 
 .prices__content {
@@ -689,7 +729,7 @@ figure figcaption p {
 .prices__contact-us {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
 }
 .prices__contact-us button {
@@ -702,6 +742,11 @@ figure figcaption p {
   line-height: 26px;
   background-color: #FFFFFF;
   color: #E06733;
+}
+.prices__contact-us img {
+  margin-top: 43px;
+  width: 152px;
+  height: 174.99px;
 }
 
 .contacts {
@@ -717,13 +762,13 @@ figure figcaption p {
   padding: 60px 109px 0px 109px;
 }
 .contacts .wrapper h2 {
-  font-family: "Inter", sans-serif;
+  font-family: "Inika";
+  font-size: 40px;
 }
-.contacts .wrapper ul {
-  padding-top: 100px;
+.contacts .wrapper .contacts__pannel {
+  margin-top: 88px;
+  margin-left: 109px;
   list-style-type: none;
-}
-.contacts .wrapper ul li {
   height: 50px;
   width: 450px;
   padding-left: 20px;
@@ -737,11 +782,11 @@ figure figcaption p {
   background: #D6E7D2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.contacts .wrapper ul li img {
-  padding-left: 340px;
-}
-.contacts .wrapper ul li a {
+.contacts .wrapper .contacts__pannel a {
   color: #636060;
+}
+.contacts .wrapper .contacts__pannel img {
+  padding-left: 340px;
 }
 
 .footer {
@@ -769,6 +814,59 @@ figure figcaption p {
 .footer .wrapper a:hover, .footer .wrapper a:focus, .footer .wrapper a:active {
   text-shadow: 1px 1px #FFFFFF, 2px 2px black;
   cursor: pointer;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.data div:not(:last-child) {
+  padding-right: 20px;
+}
+
+.rs-logo {
+  width: 211px;
+  height: 50px;
+}
+
+.social-list {
+  display: flex;
+  height: 32px;
+}
+
+.social-list__item {
+  align-self: center;
+  width: 32px;
+  height: 32px;
+  list-style: none;
+}
+.social-list__item a img {
+  align-items: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social-list_link-1 {
+  width: 32px;
+  height: 32px;
+}
+
+.social-list_link-2 {
+  width: 32px;
+  height: 32px;
+}
+
+.social-list_link-3 {
+  width: 32px;
+  height: 32px;
+}
+
+.social-list_link-4 {
+  width: 32px;
+  height: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

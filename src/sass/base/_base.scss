@@ -10,7 +10,7 @@ html {
 
 body {
 	font-size: 1.6rem;
-	font-family: 'Inter';
+	// font-family: 'Inter';
 	display: flex;
 	flex-direction: column;
 }
@@ -38,5 +38,5 @@ span {
 }
 
 object {
-	pointer-events: none;
+	pointer-events:none;
 }

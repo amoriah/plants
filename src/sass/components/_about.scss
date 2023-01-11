@@ -10,9 +10,12 @@
 
 .about .wrapper {
 	@include flex($align: center);
+	justify-content: space-between;
 	padding: 93px 109px 94px 109px;
 	img {
-		padding-left: 153px;
+		// padding-left: 153px;
+		width: 464px;
+		height: 479px;
 	}
 
 }
@@ -22,6 +25,7 @@
 	height: 350px;
 	p {
 		font-family: 'Inter', sans-serif;
+		font-size: 20px;
 		margin-top: 40px;
 		line-height: 30px;
 	}
