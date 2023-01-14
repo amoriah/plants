@@ -439,11 +439,11 @@ object {
 }
 .header__burger {
   display: none;
-  display: inline-block;
-  position: relative;
   width: 40px;
   height: 24px;
+  position: relative;
 }
+
 .burger__line {
   display: block;
   width: 100%;
@@ -867,6 +867,211 @@ figure figcaption p {
 .social-list_link-4 {
   width: 32px;
   height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    padding: 45px 0px 51px 50px;
+  }
+  .welcome .wrapper {
+    padding: 45px 50px 51px 50px;
+  }
+  .welcome .wrapper img {
+    width: 280px;
+    height: 254.15px;
+  }
+  .welcome .wrapper .welcome__content {
+    width: 346px;
+    height: 310px;
+    margin-left: 42px;
+  }
+  .welcome .wrapper .welcome__content h1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .welcome .wrapper .welcome__content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .about .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px 40px 50px;
+  }
+  .about .wrapper .about__description {
+    margin-bottom: 40px;
+  }
+  .about .wrapper .about__description h2 {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .about .wrapper .about__description p {
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+  .about .wrapper img {
+    width: 250px;
+    height: 258px;
+  }
+  .service .wrapper {
+    padding: 60px 50px 60px 50px;
+  }
+  .service .wrapper .servise__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .service .wrapper .servise__header h2 {
+    margin-bottom: 40px;
+  }
+  .service .wrapper .servise__header .servise__buttons {
+    width: 559px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .service .wrapper .servise__header .servise__buttons .service__button {
+    margin: 0;
+  }
+  .service .wrapper .figures {
+    margin: 0;
+    padding: 0;
+  }
+  .service .wrapper .figures figure {
+    width: 281px;
+    height: 450px;
+  }
+  .prices .wrapper .prices__head h2 {
+    font-size: 35px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .prices .wrapper .prices__head h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: right;
+    color: #000;
+  }
+  .prices .wrapper .prices__content .prices__variants {
+    width: 332px;
+    height: 282px;
+  }
+  .prices .wrapper .prices__content .prices__contact-us img {
+    width: 152px;
+    height: 174.98px;
+  }
+  .contacts .wrapper {
+    width: 768px;
+    height: 739px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contacts .wrapper img {
+    width: 200px;
+    height: 248.49px;
+  }
+  .contacts .wrapper h2 {
+    font-size: 40px;
+    line-height: 52px;
+    order: 1;
+  }
+  .contacts .wrapper .contacts__pannel {
+    margin: 0;
+    width: 450px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .contacts .wrapper .contacts__pannel img {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+  }
+  .footer .wrapper {
+    width: 768px;
+    height: 181px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .footer .wrapper .data {
+    bottom: 16px;
+  }
+  .footer .wrapper .rs-logo {
+    bottom: 14px;
+    padding-left: 50px;
+  }
+  .footer .wrapper .social-list {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .header__burger {
+    display: block;
+  }
+  .header__navigation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #EDF2EC;
+    z-index: 10;
+    padding-top: 35px;
+    transform: translateX(100%);
+    transition: all 0.3s ease-out;
+  }
+  .header__navigation_active {
+    transform: translateX(0);
+  }
+  .navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation .navigation_li {
+    width: 100%;
+  }
+  .navigation .navigation_li .navigation_a {
+    font-size: 38px;
+    line-height: 48px;
+  }
+  .navigation .navigation_li:not(:last-child) {
+    padding-bottom: 25px;
+  }
+  .header__navigation-close {
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+  .header__navigation-close .navigation__close-line {
+    display: block;
+    width: 4%;
+    height: 2px;
+    background-color: #717171;
+    margin: 0;
+    position: absolute;
+    left: 30%;
+    top: 3.3%;
+  }
+  .header__navigation-close .navigation__close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header__navigation-close .navigation__close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

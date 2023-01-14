@@ -1,0 +1,191 @@
+@media screen and (max-width: $tablet-width ) {
+	// HEADER
+
+	.header .wrapper {
+
+	}
+
+	.header__logo {
+		padding: 45px 0px 51px 50px;
+	}
+
+	
+	.header__navigation {
+	
+	}
+	
+	// WELCOME
+
+	.welcome .wrapper {
+		padding: 45px 50px 51px 50px;
+		img {
+			width: 280px;
+			height: 254.15px;
+		}
+		.welcome__content {
+			width: 346px;
+			height: 310px;
+			margin-left: 42px;
+			h1 {
+				font-size: 35px;
+				line-height: 50px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 25px;
+			}
+			button {
+
+			}
+		}
+	}
+
+	// ABOUT
+	.about .wrapper {
+		flex-direction: column;
+		align-items: center;
+		padding: 40px 50px 40px 50px;
+		.about__description {
+			margin-bottom: 40px;
+
+			h2 {
+				font-size: 35px;
+				line-height: 46px;
+				text-align: center;
+			}
+			p {
+				margin-bottom: 40px;
+				font-size: 20px;
+			}
+		}
+		img {
+			width: 250px;
+			height: 258px;
+		}
+	}
+
+// SERVICE
+
+	.service .wrapper {
+		padding: 60px 50px 60px 50px;
+		.servise__header {
+			flex-direction: column;
+			align-items: flex-start;
+			h2 {
+				margin-bottom: 40px;
+
+			}
+			.servise__buttons {
+				width: 559px;
+				height: 50px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.service__button {
+					margin: 0;					
+				}
+			}
+		}
+		.figures {
+			margin: 0;
+			padding: 0;
+			figure {
+				width: 281px;
+				height: 450px;
+			}
+		}
+	}
+
+	// PRICES
+	.prices .wrapper {
+		.prices__head {
+			h2 {
+				font-size: 35px;
+				line-height: 42px;
+				text-align: center;
+			}
+			h3 {
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 35px;
+				text-align: right;
+				color: #000;
+			}
+		}
+		.prices__content {
+			.prices__variants {
+				width: 332px;
+				height: 282px;
+				.prices__button {
+
+				}
+			}
+			.prices__contact-us {
+				img {
+					width: 152px;
+					height: 174.98px;
+				}
+			}
+		}
+  	}
+	// CONTACTS
+	.contacts .wrapper {
+		width: 768px;
+height: 739px;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: space-between;
+		img {
+			width: 200px;
+			height: 248.49px;
+		}
+		h2 {
+			font-size: 40px;
+			line-height: 52px;
+			order: 1;
+		}
+		.contacts__pannel {
+			margin: 0;
+			width: 450px;
+			height: 50px;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-left: 20px;
+			img {
+				padding: 0;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+	// FOOTER
+	.footer .wrapper {
+		width: 768px;
+		height: 181px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+		.data {
+			bottom: 16px;
+		}
+		.rs-logo {
+			bottom: 14px;
+			padding-left: 50px;
+
+		}
+		.social-list {
+			padding-top: 20px;
+			.social-list__item {
+
+			}
+		}
+
+	}
+
+	
+}
